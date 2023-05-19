@@ -1,11 +1,4 @@
 @charset "utf-8";
-/*
-	Visual by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
-
 /*-----------------------------------------------------------------------------
 
 Table of Contents:
@@ -45,8 +38,8 @@ Table of Contents:
 @import "cubeportfolio.min.css"; 
 
 /*----- Fonts -----*/
-@import url(http://fonts.googleapis.com/css?family=Exo:400,700,800,900);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Exo:400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import "simple-line-icons.css";
 @import "ionicons.min.css";
 
