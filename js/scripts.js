@@ -142,12 +142,13 @@
     ---------------------*/
     $("#map").gmap3({
         marker:{     
-        address:"44 W 66th St, New York, NY", 
-        options:{ icon: "../img/assets/marker.png"}},
+        // address:"37/7-2, 2nd floor, Namdev Garnet Building, Aga Abbas Ali Rd, Bengaluru, Karnataka 560042",
+        latLng: [12.976977, 77.6181303],
+        options:{ icon: "./img/assets/marker.png"}},
         map:{
         options:{
         styles: [ {
-        stylers: [ { "saturation":-90 }, { "lightness": 0 }, { "gamma": 0.0 }]},
+        stylers: [ { "saturation":0 }, { "lightness": 0 }, { "gamma": 0.0 }]},
         ],
         zoom: 13,
         scrollwheel:false,
