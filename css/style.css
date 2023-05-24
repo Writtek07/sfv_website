@@ -815,8 +815,8 @@ nav {
     background-color: transparent;
 }
 .navbar-small {
-    /* background: #fff; */
-    background: transparent linear-gradient(114deg,#63359b 0%,#430d84 100%) 0% 0% no-repeat padding-box;
+    background: #fff;
+    /* background: transparent linear-gradient(114deg,#63359b 0%,#430d84 100%) 0% 0% no-repeat padding-box; */
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.15);
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.15);
@@ -1114,7 +1114,7 @@ nav {
     position:absolute;
     opacity: 1;
     width: 170px;
-    margin-top: -15px;    
+    margin-top: -10px;    
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -1828,9 +1828,9 @@ blockquote strong {
 }
 .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
     background: #f6f7f7;
-    border: 1px solid #91DA32;
+    border: 1px solid #5F259F;
     border-radius: 3px;
-    color: #91DA32;
+    color: #5F259F;
     display: inline-block;
     font: 400 11px/34px "Montserrat",sans-serif;
     min-width: 80px;
