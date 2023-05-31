@@ -99,6 +99,12 @@
         pagination: true,
         navigation: false
     });
+    $("#owl-council").owlCarousel({
+        autoPlay : true,
+        singleItem : true,
+        pagination: true,
+        navigation: false
+    });
     // AJAX project slider
     $(document).ajaxComplete(function(){
         $("#project-slider").owlCarousel({

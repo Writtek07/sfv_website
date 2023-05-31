@@ -713,12 +713,13 @@ p {
     .tp-banner li img {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
     .tp-banner li .slide-image {
-        width: 100%;
+        width: 50%;
         height: auto;
         background-size: cover;
-        background-position: bottom;
+        /* background-position: bottom; */
     }    
   }
   
@@ -729,6 +730,8 @@ p {
       height: auto;
       max-width: 100%;
       max-height: 100%;
+      object-fit: cover;
+
     }
     .tp-banner li .slide-image {
         width: auto;
@@ -751,7 +754,7 @@ p {
     bottom:  0;
     left: 0;
     right: 0;
-    background-size: cover; 
+    background-size: cover;
 }
 .content {
     position: relative;
@@ -790,6 +793,8 @@ p {
     margin-top: 0;
     z-index: -1;
 } 
+
+
 .tparrows.preview4:after {
     background: #fff;
     background: rgba(255,255,255,.05);
@@ -1615,6 +1620,16 @@ nav {
     transition: all 0.15s;
 }
 
+.owl-carousel {
+    display: flex;
+    justify-content: center;
+}
+  
+.owl-item {
+    display: flex;
+    justify-content: center;
+}
+  
 /*----- Fun Facts -----*/
 #fun-facts {
 	display: table;
@@ -3959,3 +3974,14 @@ pre {
         font-size: 28px;
     }
 }
+/* Council section */
+.img img {
+    max-height: 500px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
