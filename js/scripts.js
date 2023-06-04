@@ -99,12 +99,60 @@
         pagination: true,
         navigation: false
     });
+    // Counsel slider
     $("#owl-council").owlCarousel({
         autoPlay : true,
-        singleItem : true,
+        singleItem : false,
         pagination: true,
         navigation: false
     });
+    //Products carousal bottom
+    $("#owl-product-1").owlCarousel({
+        autoPlay : false,
+        singleItem : true,
+        pagination: true,
+        navigation: true,
+        loop: true,
+        navText: ["<i class='icon ion-chevron-left'></i>", "<i class='icon ion-chevron-right'></i>"], // Custom navigation button HTML
+        navContainer: "carousel-wrap"
+    });
+    $("#owl-product-2").owlCarousel({
+        autoPlay : false,
+        singleItem : true,
+        pagination: true,
+        navigation: true,
+        loop: true,
+        navText: ["<i class='icon ion-chevron-left'></i>", "<i class='icon ion-chevron-right'></i>"], // Custom navigation button HTML
+        navContainer: "carousel-wrap"
+    });
+    // Media carousal
+    $("#owl-media").owlCarousel({
+        autoPlay : false,
+        items: 4,
+        singleItem : false,
+        pagination: true,
+        navigation: true,
+        loop: true
+    });
+   
+    $("#full-width-carousel-desktop").owlCarousel({
+        autoPlay : true,
+        items: 1,
+        singleItem : false,
+        pagination: true,
+        navigation: true,
+        loop: true
+      });
+    
+      $("#full-width-carousel-mobile").owlCarousel({
+        autoPlay : true,
+        items: 1,
+        singleItem : false,
+        pagination: true,
+        navigation: true,
+        loop: true
+      });
+      
     // AJAX project slider
     $(document).ajaxComplete(function(){
         $("#project-slider").owlCarousel({
