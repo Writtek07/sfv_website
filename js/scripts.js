@@ -112,18 +112,14 @@
         singleItem : true,
         pagination: true,
         navigation: true,
-        loop: true,
-        navText: ["<i class='icon ion-chevron-left'></i>", "<i class='icon ion-chevron-right'></i>"], // Custom navigation button HTML
-        navContainer: "carousel-wrap"
+        loop: true
     });
     $("#owl-product-2").owlCarousel({
         autoPlay : false,
         singleItem : true,
         pagination: true,
         navigation: true,
-        loop: true,
-        navText: ["<i class='icon ion-chevron-left'></i>", "<i class='icon ion-chevron-right'></i>"], // Custom navigation button HTML
-        navContainer: "carousel-wrap"
+        loop: true
     });
     // Media carousal
     $("#owl-media").owlCarousel({
