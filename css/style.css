@@ -4146,4 +4146,90 @@ pre {
         margin-left: 3em;
     }
 }
+
 /* End video section css  */
+
+/* People section css */
+#owl-product-1 img {
+    border-radius: 20px;    
+}
+#owl-product-2 img {
+    border-radius: 20px;    
+}
+/* End People section css */
+
+/* Wniq page css */
+/* .bullet-li {
+    background-image: url(../img/wniq/checkbox-circle-fill.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+} */
+
+/* .circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+} */
+
+
+.wniq-about-card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.wniq-about-card .card-title {
+    margin-top: 2em;
+}
+
+.wniq-about-card h4 {
+    padding-left: 10px;
+}
+
+.wniq-about-card p {
+    font-weight: bold; 
+    color: black; 
+    padding-bottom: 30px; 
+    padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+.wniq-features {
+    justify-content: center;
+    margin-top: 10em;
+}
+/* .wniq-features img {
+    right: 100px;
+} */
+.wniq-features .feat-content {
+    top: 150px;
+}
+}
+
+@media (max-width: 767px) {
+    .wniq-features {
+        margin-top: 7em;
+    }
+}
+
+.wniq-download {
+    /* background: linear-gradient(180deg, #3B036E 0%, #7F0C4F 100%);border-radius: 15px; */
+    background-image: url(../img/wniq/wniq-bg.png);
+    background-repeat: no-repeat;        
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; Set the height to fill the entire screen */
+    display: flex;
+    /* align-items: center; Vertically center the content */
+    border-radius: 15px;
+}
+
+
