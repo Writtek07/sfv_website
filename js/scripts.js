@@ -4,74 +4,74 @@
     /* -------------------
     Revolution Sliders
     ---------------------*/
-    $('.tp-banner').show().revolution({
-        delay: 16000,
-        startwidth: 1170,
-        startheight: 700,
-        hideThumbs: 200,
-        dottedOverlay: "none",
-	     hideTimerBar: "on",
-        thumbWidth: 100,
-        thumbHeight: 50,
-        thumbAmount: 5,
-        navigationType: "none",
-        navigationArrows: "solo",
-        navigationStyle: "preview4",
-        touchenabled: "on",
-        swipe_velocity: 0.7,
-        swipe_min_touches: 1,
-        swipe_max_touches: 1,
-        drag_block_vertical: false,
-        keyboardNavigation: "off",
-        navigationHAlign: "center",
-        navigationVAlign: "bottom",
-        navigationVOffset: 20,
-        soloArrowLeftHalign: "left",
-        soloArrowLeftValign: "center",
-        soloArrowLeftHOffset: 20,
-        soloArrowRightHalign: "right",
-        soloArrowRightValign: "center",
-        soloArrowRightHOffset: 20,
-        fullWidth: "off",
-        fullScreen: "on",
-        spinner: "spinner1",
-        stopLoop: "off",
-        stopAfterLoops: -1,
-        stopAtSlide: -1,
-        shuffle: "off",
-        autoHeight: "off",
-        forceFullWidth: "off",
-        hideThumbsOnMobile: "off",
-        hideNavDelayOnMobile: 1500,
-        hideBulletsOnMobile: "off",
-        hideArrowsOnMobile: "off"
-    });
-    $('.tp-banner-video').show().revolution({
-        dottedOverlay: "none",
-        delay: 9000,
-        startheight: 700,
-        hideTimerBar: "on",
-        navigationType: "none",
-		  navigationStyle: "preview4",
-		  touchenabled: "on",
-		  swipe_velocity: 0.7,
-		  swipe_min_touches: 1,
-		  swipe_max_touches: 1,
-		  drag_block_vertical: false,
-	  	  keyboardNavigation: "on",
-		  fullScreen: "on",
-		  spinner: "spinner1",
-		  stopLoop: "off",
-		  stopAfterLoops: -1,
-	  	  stopAtSlide: -1,
-		  forceFullWidth: "off",
-		  fullScreenAlignForce: "off",
-		  minFullScreenHeight: "400",
-		  hideThumbsOnMobile: "off",
-		  hideNavDelayOnMobile: 1500,
-        hideBulletsOnMobile: "off",
-		  hideArrowsOnMobile: "off"
-    });
+    // $('.tp-banner').show().revolution({
+    //     delay: 16000,
+    //     startwidth: 1170,
+    //     startheight: 700,
+    //     hideThumbs: 200,
+    //     dottedOverlay: "none",
+	//      hideTimerBar: "on",
+    //     thumbWidth: 100,
+    //     thumbHeight: 50,
+    //     thumbAmount: 5,
+    //     navigationType: "none",
+    //     navigationArrows: "solo",
+    //     navigationStyle: "preview4",
+    //     touchenabled: "on",
+    //     swipe_velocity: 0.7,
+    //     swipe_min_touches: 1,
+    //     swipe_max_touches: 1,
+    //     drag_block_vertical: false,
+    //     keyboardNavigation: "off",
+    //     navigationHAlign: "center",
+    //     navigationVAlign: "bottom",
+    //     navigationVOffset: 20,
+    //     soloArrowLeftHalign: "left",
+    //     soloArrowLeftValign: "center",
+    //     soloArrowLeftHOffset: 20,
+    //     soloArrowRightHalign: "right",
+    //     soloArrowRightValign: "center",
+    //     soloArrowRightHOffset: 20,
+    //     fullWidth: "off",
+    //     fullScreen: "on",
+    //     spinner: "spinner1",
+    //     stopLoop: "off",
+    //     stopAfterLoops: -1,
+    //     stopAtSlide: -1,
+    //     shuffle: "off",
+    //     autoHeight: "off",
+    //     forceFullWidth: "off",
+    //     hideThumbsOnMobile: "off",
+    //     hideNavDelayOnMobile: 1500,
+    //     hideBulletsOnMobile: "off",
+    //     hideArrowsOnMobile: "off"
+    // });
+    // $('.tp-banner-video').show().revolution({
+    //     dottedOverlay: "none",
+    //     delay: 9000,
+    //     startheight: 700,
+    //     hideTimerBar: "on",
+    //     navigationType: "none",
+	// 	  navigationStyle: "preview4",
+	// 	  touchenabled: "on",
+	// 	  swipe_velocity: 0.7,
+	// 	  swipe_min_touches: 1,
+	// 	  swipe_max_touches: 1,
+	// 	  drag_block_vertical: false,
+	//   	  keyboardNavigation: "on",
+	// 	  fullScreen: "on",
+	// 	  spinner: "spinner1",
+	// 	  stopLoop: "off",
+	// 	  stopAfterLoops: -1,
+	//   	  stopAtSlide: -1,
+	// 	  forceFullWidth: "off",
+	// 	  fullScreenAlignForce: "off",
+	// 	  minFullScreenHeight: "400",
+	// 	  hideThumbsOnMobile: "off",
+	// 	  hideNavDelayOnMobile: 1500,
+    //     hideBulletsOnMobile: "off",
+	// 	  hideArrowsOnMobile: "off"
+    // });
     
     /* -------------------
     Owl Slider callings
@@ -190,21 +190,21 @@
     /* -------------------
     Google map
     ---------------------*/
-    $("#map").gmap3({
-        marker:{     
-        // address:"37/7-2, 2nd floor, Namdev Garnet Building, Aga Abbas Ali Rd, Bengaluru, Karnataka 560042",
-        latLng: [12.976977, 77.6181303],
-        options:{ icon: "./img/assets/marker.png"}},
-        map:{
-        options:{
-        styles: [ {
-        stylers: [ { "saturation":0 }, { "lightness": 0 }, { "gamma": 0.0 }]},
-        ],
-        zoom: 13,
-        scrollwheel:false,
-        draggable: true }
-        }
-    });	
+    // $("#map").gmap3({
+    //     marker:{     
+    //     // address:"37/7-2, 2nd floor, Namdev Garnet Building, Aga Abbas Ali Rd, Bengaluru, Karnataka 560042",
+    //     latLng: [12.976977, 77.6181303],
+    //     options:{ icon: "./img/assets/marker.png"}},
+    //     map:{
+    //     options:{
+    //     styles: [ {
+    //     stylers: [ { "saturation":0 }, { "lightness": 0 }, { "gamma": 0.0 }]},
+    //     ],
+    //     zoom: 13,
+    //     scrollwheel:false,
+    //     draggable: true }
+    //     }
+    // });	
     /* -------------------
     Animated progress bars
     ---------------------*/
