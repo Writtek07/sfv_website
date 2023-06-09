@@ -3551,9 +3551,10 @@ ul.caret-list li:before {
     background-color: #f9f9f9;
 }
 /*----- Owl Carousel -----*/  
-.owl-theme .owl-controls .owl-buttons div {
+ .owl-theme .owl-controls .owl-buttons div {
     padding: 5px 7px;
-    background: rgba(7, 7, 7, 0.2);
+    background: #5F259F;
+    border-radius: 20%;
     opacity: 0;
 }
 
@@ -3561,12 +3562,12 @@ ul.caret-list li:before {
     opacity: 1;
 }
 
-.owl-buttons i {
+/*.owl-buttons i {
     font-size: 16px;
     color: #ffffff;
-}
+} */
 
-.owl-buttons .owl-prev {
+/* .owl-buttons .owl-prev {
     left: -6px;
     height: 43px;
     width: 43px;
@@ -3574,6 +3575,7 @@ ul.caret-list li:before {
     border-radius: 50%;
     color: #5F259F;
     text-align: center;
+    background: url("../img/portfolio/buttons/popup-prev-dark.png") no-repeat;
 }
 
 .owl-buttons .owl-next {
@@ -3584,14 +3586,27 @@ ul.caret-list li:before {
     border-radius: 50%;
     color: #5F259F;
     text-align: center;
-}
+    background: url("../img/portfolio/buttons/popup-next-dark.png") no-repeat;
+} */
 
-.owl-buttons .owl-prev::before {
-    /* content: "<i class='fa-arrow-left'></i>"; */
+/* .owl-buttons .owl-prev::before {
+    content: "<img src='img/portfolio/buttons/popup-prev-light.png'>";
+    
 }
 
 .owl-buttons .owl-next::before {
-    /* content: "<i class='fa-arrow-right'></i>"; */
+    content: "<img src='img/portfolio/buttons/popup-next-light.png'>";
+    
+} */
+
+.owl-controls .owl-buttons .owl-prev div {
+    background-color: #000;
+    color: white
+}
+
+.owl-controls .owl-buttons .owl-next div {
+    background-color: #000;
+    color: white
 }
 
 .blog-post-fullwidth .owl-buttons .owl-prev,
@@ -4218,6 +4233,9 @@ pre {
     .wniq-features {
         margin-top: 7em;
     }
+    .wniq-about-card .mobile-guide-text {
+        margin-left: 4em;
+    }
 }
 
 .wniq-download {
@@ -4232,4 +4250,41 @@ pre {
     border-radius: 15px;
 }
 
+@media(min-width: 768px) {
+    .wniq-download .first-column {
+    margin-top: 8em;
+    }
+}
 
+@media(max-width: 767px) {
+    .wniq-download .first-column {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    }
+}
+
+/* App features different sections */
+/* Hide the mobile section by default */
+#app-feat-mobile {
+    display: none;
+}
+
+/* Styles for desktop */
+@media (min-width: 768px) {
+    #app-feat-desktop {
+        margin-top: 4em;
+    }
+}
+
+/* Styles for mobile */
+@media (max-width: 767px) {
+    #app-feat-desktop {
+        display: none;
+    }
+
+    #app-feat-mobile {
+        display: block;
+        margin-top: 4em;
+    }
+}
+/* End App features different sections */

@@ -104,7 +104,10 @@
         autoPlay : true,
         singleItem : false,
         pagination: true,
-        navigation: false
+        navigation: false,
+        navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
+        stopOnHover: true,
+        touchDrag: false
     });
     //Products carousal bottom
     $("#owl-product-1").owlCarousel({
@@ -112,14 +115,18 @@
         singleItem : true,
         pagination: true,
         navigation: true,
-        loop: true
+        loop: true,
+        navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>']
+        // stopOnHover: true
     });
     $("#owl-product-2").owlCarousel({
         autoPlay : false,
         singleItem : true,
         pagination: true,
         navigation: true,
-        loop: true
+        loop: true,
+        navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>']
+        // stopOnHover: true
     });
     // Media carousal
     $("#owl-media").owlCarousel({
@@ -128,7 +135,9 @@
         singleItem : false,
         pagination: true,
         navigation: true,
-        loop: true
+        loop: true,
+        navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>']
+        // stopOnHover: true
     });
    
     $("#full-width-carousel-desktop").owlCarousel({
@@ -137,7 +146,10 @@
         singleItem : false,
         pagination: true,
         navigation: true,
-        loop: true
+        loop: true,
+        navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
+        stopOnHover: true,
+        touchDrag: false
       });
     
       $("#full-width-carousel-mobile").owlCarousel({
@@ -146,7 +158,10 @@
         singleItem : false,
         pagination: true,
         navigation: true,
-        loop: true
+        loop: true,
+        navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
+        stopOnHover: true,
+        touchDrag: false
       });
       
     // AJAX project slider
@@ -162,8 +177,11 @@
         autoPlay : true,
         singleItem : true,
         pagination: true,
-        navigation: false,
+        navigation: true,
         navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
+        stopOnHover: true,
+        touchDrag: false
+
     });
     /* -------------------
     Parallax Sections
@@ -236,16 +254,20 @@
     /* -------------------
     Scroll functions
     ---------------------*/
+    // Hide Navbar on initialze and render when the scrolling begins
+    $('nav').hide(); 
     $(window).scroll(function(){
         parallax();
         /* -------------------
         Header Animation
         ---------------------*/
-        if ($(this).scrollTop() > 5){  
+        if ($(this).scrollTop() > 5){ 
             $('nav').addClass("navbar-small")
+            $('nav').show();
         }
         else{
-            $('nav').removeClass("navbar-small")
+            // $('nav').removeClass("navbar-small")
+            $('nav').hide();
         }
         /* -------------------
         Back to top button popup
@@ -561,6 +583,25 @@ Portfolio
         }).fail(function() {
             // error
         });
-    });    
+    }); 
+
+    if ($(window).width() < 768) {
+        $('#app-feat-desktop').hide();
+        $('#app-feat-mobile').show();
+    } else {
+        $('#app-feat-desktop').show();
+        $('#app-feat-mobile').hide();
+    }
+
+    // Update the displayed section on window resize
+    $(window).resize(function() {
+        if ($(window).width() < 768) {
+            $('#app-feat-desktop').hide();
+            $('#app-feat-mobile').show();
+        } else {
+            $('#app-feat-desktop').show();
+            $('#app-feat-mobile').hide();
+        }
+    });
     
 })(jQuery, window, document);
