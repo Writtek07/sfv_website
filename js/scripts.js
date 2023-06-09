@@ -585,16 +585,8 @@ Portfolio
         });
     }); 
 
-    if ($(window).width() < 768) {
-        $('#app-feat-desktop').hide();
-        $('#app-feat-mobile').show();
-    } else {
-        $('#app-feat-desktop').show();
-        $('#app-feat-mobile').hide();
-    }
-
-    // Update the displayed section on window resize
-    $(window).resize(function() {
+    // Wniq app page to show device wise app features section
+    $(window).load(function(){ 
         if ($(window).width() < 768) {
             $('#app-feat-desktop').hide();
             $('#app-feat-mobile').show();
@@ -602,6 +594,17 @@ Portfolio
             $('#app-feat-desktop').show();
             $('#app-feat-mobile').hide();
         }
+
+        // Update the displayed section on window resize
+        $(window).resize(function() {
+            if ($(window).width() < 768) {
+                $('#app-feat-desktop').hide();
+                $('#app-feat-mobile').show();
+            } else {
+                $('#app-feat-desktop').show();
+                $('#app-feat-mobile').hide();
+            }
+        });
     });
     
 })(jQuery, window, document);
