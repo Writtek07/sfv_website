@@ -3556,6 +3556,7 @@ ul.caret-list li:before {
     background: #5F259F;
     border-radius: 20%;
     opacity: 0;
+    margin-right: 2em;
 }
 
 .owl-carousel:hover .owl-controls .owl-buttons div {
