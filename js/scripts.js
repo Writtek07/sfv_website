@@ -102,12 +102,14 @@
     // Counsel slider
     $("#owl-council").owlCarousel({
         autoPlay : true,
+        autoPlaySpeed: 4000,
         singleItem : false,
         pagination: true,
-        navigation: false,
+        navigation: true,
+        loop: true,
         navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
         stopOnHover: true,
-        touchDrag: false
+        touchDrag: true
     });
     //Products carousal bottom
     $("#owl-product-1").owlCarousel({
@@ -130,8 +132,8 @@
     });
     // Media carousal
     $("#owl-media").owlCarousel({
-        autoPlay : false,
-        items: 4,
+        autoPlay : false,        
+        items: 3,
         singleItem : false,
         pagination: true,
         navigation: true,
@@ -142,6 +144,21 @@
    
     $("#full-width-carousel-desktop").owlCarousel({
         autoPlay : true,
+        autoPlaySpeed: 4000,
+        items: 1,
+        singleItem : false,
+        pagination: false,
+        navigation: true,
+        loop: true,
+        navigationText : ['<i class="icon ion-chevron-left "></i>','<i class="icon ion-chevron-right"></i>'],
+        stopOnHover: true,
+        touchDrag: false
+      });
+
+    
+      $("#full-width-carousel-mobile").owlCarousel({
+        autoPlay : true,
+        autoPlaySpeed: 4000,
         items: 1,
         singleItem : false,
         pagination: true,
@@ -151,15 +168,16 @@
         stopOnHover: true,
         touchDrag: false
       });
-    
-      $("#full-width-carousel-mobile").owlCarousel({
+
+      $("#wniq-banner-footer").owlCarousel({
         autoPlay : true,
+        autoPlaySpeed: 3000,
         items: 1,
         singleItem : false,
-        pagination: true,
-        navigation: true,
+        pagination: false,
+        // navigation: true,
         loop: true,
-        navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
+        // navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
         stopOnHover: true,
         touchDrag: false
       });
@@ -255,20 +273,20 @@
     Scroll functions
     ---------------------*/
     // Hide Navbar on initialze and render when the scrolling begins
-    $('nav').hide(); 
-    $(window).scroll(function(){
+    // $('nav').hide(); 
+    // $(window).scroll(function(){
         parallax();
         /* -------------------
         Header Animation
         ---------------------*/
-        if ($(this).scrollTop() > 5){ 
-            $('nav').addClass("navbar-small")
-            $('nav').show();
-        }
-        else{
+        // if ($(this).scrollTop() > 5){ 
+        //     $('nav').addClass("navbar-small")
+        //     $('nav').show();
+        // }
+        // else{
             // $('nav').removeClass("navbar-small")
-            $('nav').hide();
-        }
+            // $('nav').hide();
+        // }
         /* -------------------
         Back to top button popup
         ---------------------*/
@@ -278,7 +296,7 @@
         else{
             $("#back-to-top").stop().animate({ bottom:'-50px' },300,'easeInOutCubic')
         }
-    });
+    // });
     /* -------------------
     Preloader
     ---------------------*/
@@ -606,5 +624,26 @@ Portfolio
             }
         });
     });
+
+    // Media cards in home page sizing fix
+    window.addEventListener('load', function() {
+        var cards = document.querySelectorAll('.media-background .card');
+        var maxCardHeight = 0;
+     
+        // Find the maximum height among all the cards
+        cards.forEach(function(card) {
+           var cardHeight = card.offsetHeight;
+           if (cardHeight > maxCardHeight) {
+              maxCardHeight = cardHeight;
+           }
+        });
+     
+        // Set the maximum height for all cards
+        cards.forEach(function(card) {
+           card.style.minHeight = maxCardHeight + 'px';
+        });
+     });  
+    //  End Media cards in home page sizing fix   
+     
     
 })(jQuery, window, document);
