@@ -1,8 +1,8 @@
 ::-moz-selection {
-    background: #5F259F;
+    background: grey;
 }
 ::selection {
-	background: #5F259F;
+	background: grey;
 }
 
 .backgrounds {

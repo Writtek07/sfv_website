@@ -934,7 +934,7 @@ p {
         left: 7px;
         top: 50%;
         transform: translateY(-50%);
-        color: black;
+        /* color: black; */
         z-index: 3;   
         height: 45px;            
       }
@@ -946,10 +946,10 @@ p {
       
       .banner-desk-carousel .owl-carousel .owl-next {      
         position: absolute;        
-        right: 5px;
+        right: 7px;
         top: 50%;
         transform: translateY(-50%);
-        color: black;
+        /* color: black; */
         z-index: 3;
         height: 45px;           
       }      
@@ -1558,11 +1558,6 @@ nav {
     }
 }
 
-.abt-txt p {
-    font-weight: 600;
-    font-size: 20px;
-    color: #000;
-}
 
 #about p {
     line-height: 1.8;
@@ -4313,6 +4308,7 @@ pre {
 @media (min-width: 768px) {
     .wniq-desk-banner {
         display: block;
+        background: linear-gradient(180deg, #3B036E 0%, #7F0C4F 100%);
     }
     .wniq-mob-banner {
         display: none;
