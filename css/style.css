@@ -53,7 +53,7 @@ body {
 html { -webkit-font-smoothing: antialiased; overflow-x: hidden;}
 header { -webkit-font-smoothing: antialiased; overflow-x: hidden; height: 6%;}
 body {
-	font-family: "FinalSix";
+	font-family: "FinalSix-Med";
     font-size: 14px!important;
 	font-weight: 400;
 	color: #1c1c1c;
@@ -904,7 +904,8 @@ p {
     }
 
     .banner-desk-carousel {
-        display: block;        
+        display: block;
+        margin-top: 6px;      
     }
     /* .owl-carousel .owl-dots {
       display: block;
@@ -4297,10 +4298,10 @@ pre {
         display: block;
         background: linear-gradient(180deg, #3B036E 0%, #7F0C4F 100%);
     }
-    #wniq-banner-footer h3 {
+    #wniq-banner-footer h4 {
         color: #FFFFFF;        
     }
-    #wniq-banner-footer h4 {
+    #wniq-banner-footer h5 {
         color: #FFFFFF;        
     }
 }
@@ -4351,8 +4352,8 @@ pre {
 }
 
 #media {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    /* padding-top: 30px; */
+    /* padding-bottom: 30px; */
 }
 
 #footer {
