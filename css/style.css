@@ -42,6 +42,7 @@ Table of Contents:
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import "simple-line-icons.css";
 @import "ionicons.min.css";
+@import "finalsix.css";
 
 /*----- General ----*/
 html, 
@@ -52,13 +53,18 @@ body {
 html { -webkit-font-smoothing: antialiased; overflow-x: hidden;}
 header { -webkit-font-smoothing: antialiased; overflow-x: hidden; height: 6%;}
 body {
-	font-family: "Poppins";
+	font-family: "FinalSix";
     font-size: 14px!important;
 	font-weight: 400;
 	color: #1c1c1c;
 }
 /* Updating all tags  font-size */
-body p h1 h2 h3 h4 h5 h6 {
+body h1 h2 h3 h4 h5 h6 {
+    font-family: "FinalSix-Bold";
+    font-size: 14px!important;
+}
+body p {
+    font-family: "FinalSix-Med";
     font-size: 14px!important;
 }
 a {
@@ -104,21 +110,21 @@ a:focus, a:active, button::-moz-focus-inner, input[type="reset"]::-moz-focus-inn
     float: left;
 }
 h1, h2, h3, h4, h5, h6 {
-	/* font-family: 'Poppins','Exo', sans-serif; */
-	font-family: 'Poppins';
+	/* font-family: 'FinalSix','Exo', sans-serif; */
+	font-family: 'FinalSix';
 	font-weight: 700;
 	line-height: 1;
     color: #1c1c1c;
 }
 h1 small, h2 small, h3 small {
-	/* font-family: 'Poppins','Open Sans', sans-serif; */
-	font-family: 'Poppins';
+	/* font-family: 'FinalSix','Open Sans', sans-serif; */
+	font-family: 'FinalSix';
 	font-weight: 200;
 	color: #1c1c1c;
 }
 h4 small, h5 small, h6 small {
-	/* font-family: 'Poppins','Open Sans', sans-serif; */
-	font-family: 'Poppins';
+	/* font-family: 'FinalSix','Open Sans', sans-serif; */
+	font-family: 'FinalSix';
 	font-weight: 300;
 	color: #1c1c1c;
 }
@@ -127,7 +133,7 @@ h4 {
     letter-spacing: 1px;
 }
 p {
-   color: #7a7a7a;
+   /* color: #7a7a7a; */
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
@@ -166,8 +172,8 @@ p {
     letter-spacing: 2px;
     margin-top: 0;
     margin-bottom: 22px;
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-size: 30px;
 }
 .project-title {
@@ -632,8 +638,8 @@ p {
 	letter-spacing: 2px; 
 }
 .home-heading {
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-weight: 700;
     letter-spacing: 0px;
     text-transform: uppercase;
@@ -660,8 +666,8 @@ p {
     }
 }
 .home-subheading {
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-size: 14px;
     letter-spacing: .5px; 
     font-weight: 400;
@@ -1018,10 +1024,10 @@ nav {
     }
 }
 .navbar-default .navbar-right {
-	/* font-family: 'Poppins','Exo', sans-serif; */
-	font-family: 'Poppins';
-	font-size: 14px;
-    font-weight: 700;
+	/* font-family: 'FinalSix','Exo', sans-serif; */
+	font-family: 'FinalSix-Med';
+	font-size: 16px;
+    /* font-weight: 700; */
     /* text-transform: uppercase; */
 	height: 100%;
 	margin-top: 10px;
@@ -1043,7 +1049,7 @@ nav {
 } 
 .navbar-alt .navbar-nav > li > a,
 .navbar-alt .navbar-nav > li > span {
-	/* color: #fff; */
+	/* color: #fff; */    
 	color: #5F259F;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -1052,8 +1058,8 @@ nav {
     transition: all 0.2s ease-in-out;
 }
 .navbar-small .navbar-nav > li > a,
-.navbar-small .navbar-nav > li > span {
-	color: #1C1C1C;	
+.navbar-small .navbar-nav > li > span {    	
+    color: #1C1C1C;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -1456,8 +1462,8 @@ nav {
 
 /*----- Features -----*/
 #features {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    /* padding-top: 20px; */
+    padding-bottom: 30px;
 }
 @media (min-width: 992px) {
     .features-row {
@@ -1498,8 +1504,8 @@ nav {
     }
 }
 .feature-info h4 {
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-weight: 700;
     text-transform: uppercase;
     color: #1c1c1c;
@@ -1534,8 +1540,8 @@ nav {
 
 /*----- About Section -----*/
 #about {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .about-text {
     margin-top: 40px;
@@ -1666,8 +1672,8 @@ nav {
 
 /*----- Team -----*/
 #team {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 .team-member {
     padding: 10px;
@@ -1897,8 +1903,8 @@ nav {
     margin-top: 3px;
 }
 .counter {
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-size: 65px;
     font-weight: 700;
     letter-spacing: 0px;
@@ -1921,8 +1927,8 @@ nav {
     position: relative;
     display: block; 
     line-height: 1.5;
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1938,8 +1944,8 @@ nav {
     padding-left: 0px; 
 }
 blockquote strong {
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-weight: 700;
 }
 #quote .icon-left {
@@ -2152,7 +2158,7 @@ blockquote strong {
 }
 .cbp-popup-singlePage-counter {
     top: -24px;
-    font-family: 'Poppins','Exo', sans-serif;
+    font-family: 'FinalSix','Exo', sans-serif;
     font-weight: 400;
     color: #1c1c1c;
 }
@@ -2324,8 +2330,8 @@ blockquote strong {
 
 /*----- Services -----*/
 #services {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .service {
     margin-top: 20px;
@@ -2392,14 +2398,14 @@ blockquote strong {
 .price-table .price .currency {
     position: relative;
     right: 5px;
-    font-family: 'Poppins','Exo', sans-serif;
+    font-family: 'FinalSix','Exo', sans-serif;
     font-weight: 400;
     font-size: 20px; 
 }
 .price-table .price .pricing {
     position: relative;
     right: 5px;
-    font-family: 'Poppins','Exo', sans-serif;
+    font-family: 'FinalSix','Exo', sans-serif;
     font-weight: 700;
     font-size: 55px;
     line-height: 1; 
@@ -2473,8 +2479,8 @@ blockquote strong {
     text-align: center;
     cursor: pointer;
     color: #fff;
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-weight: 400!important;
     font-size: 14px; 
     overflow: hidden;
@@ -2573,8 +2579,8 @@ blockquote strong {
 }
 .testimonial span { 
     font-size: 18px;
-    /* font-family: 'Poppins','Open Sans', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Open Sans', sans-serif; */
+    font-family: 'FinalSix';
     letter-spacing: 0px;
     font-weight: 300;
     line-height: 32px;
@@ -2583,7 +2589,7 @@ blockquote strong {
     opacity: .7;
 }
 #testimonials .testimonial strong {
-    font-family: 'Poppins','Exo', sans-serif;
+    font-family: 'FinalSix','Exo', sans-serif;
     font-weight: 700;
 }
 #testimonials .icon-left {
@@ -2643,7 +2649,7 @@ blockquote strong {
 
 /* Form style */
 #contact input, select, textarea{ 
-    font-family: 'Poppins','Exo', sans-serif;
+    font-family: 'FinalSix','Exo', sans-serif;
     font-weight: 400;
 	width: 100%; 
 	/* max-width: ; */
@@ -2671,8 +2677,8 @@ textarea {
 	-webkit-border-radius: 2px; 
 }
 ::-webkit-input-placeholder { 
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-weight: 700;
     text-transform: uppercase;
     color:#555;
@@ -2685,8 +2691,8 @@ textarea {
 
 #contact input.submit { 
     width: auto!important;
-	/* font-family: 'Poppins','Exo', sans-serif; */
-	font-family: 'Poppins';
+	/* font-family: 'FinalSix','Exo', sans-serif; */
+	font-family: 'FinalSix';
     font-size: 14px;
     font-weight: 700;
     -webkit-box-sizing: border-box;
@@ -3041,8 +3047,8 @@ footer a:hover {
 .subscription input::-webkit-input-placeholder {
 	color: #555;
 	text-transform: capitalize;
-    /* font-family: 'Poppins','Open Sans',sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Open Sans',sans-serif; */
+    font-family: 'FinalSix';
 }
 .subscribe-input {
     width: 100%;
@@ -3208,8 +3214,8 @@ footer a:hover {
 .btn-info, 
 .btn-warning, 
 .btn-danger {
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -3284,8 +3290,8 @@ outline-offset: 0;
 }
 .btn-primary-full {
     width: 100%;
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     text-transform: uppercase;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -3314,8 +3320,8 @@ outline-offset: 0;
 .btn-transparent {
     padding: 6.5px 20px!important;
     color: #fff;
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-weight: 400!important;
     background-color: transparent;
     border: 2.3px solid rgba(255,255,255,.8);
@@ -3323,8 +3329,8 @@ outline-offset: 0;
 .btn-transparent-dark {
     padding: 6.5px 20px!important;
     color: #252525;
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     text-transform: uppercase;
     font-weight: 700!important;
     background-color: transparent;
@@ -3557,8 +3563,8 @@ ul.caret-list li:before {
 }
 /*--tabs--*/
 .nav-tabs>li>a {
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -3580,8 +3586,8 @@ ul.caret-list li:before {
     line-height: 24px;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -3626,8 +3632,7 @@ ul.caret-list li:before {
     padding: 5px 7px;
     background: #5F259F;
     border-radius: 20%;
-    opacity: 0;
-    margin-right: 2em;
+    opacity: 0;    
 }
 
 .owl-carousel:hover .owl-controls .owl-buttons div {
@@ -3885,7 +3890,7 @@ ul.caret-list li:before {
     }
 }
 .blog-widget-container .form-control {
-    font-family: 'Poppins','Open Sans',sans-serif;
+    font-family: 'FinalSix','Open Sans',sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-transform: none;
@@ -3973,8 +3978,8 @@ pre {
     margin-bottom: 80px;
 }
 .comment-form input, select, textarea{ 
-    /* font-family: 'Poppins','Exo', sans-serif; */
-    font-family: 'Poppins';
+    /* font-family: 'FinalSix','Exo', sans-serif; */
+    font-family: 'FinalSix';
     font-weight: 400;
 	width: 100%; 
 	/* max-width: ; */
@@ -4350,8 +4355,12 @@ pre {
 }
 
 #media {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#footer {
+    padding-top: 30px; 
 }
 /* .wniq-features img {
     right: 100px;

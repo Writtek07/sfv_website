@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@font-face {
+   font-family: "FinalSix";
+   src: url(../fonts/FinalSix-Black.ttf) format('truetype');   
+}
+
+@font-face {
+    font-family: "FinalSix-Bold";
+    src: url(../fonts/FinalSix-Bold.ttf) format('truetype') ;   
+ }
+
+@font-face {
+    font-family: "FinalSix-Extra";
+    src: url(../fonts/FinalSix-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "FinalSix-Med";
+    src: url(../fonts/FinalSix-Medium.ttf) format('truetype')
+}
