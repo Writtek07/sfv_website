@@ -626,23 +626,53 @@ Portfolio
     });
 
     // Media cards in home page sizing fix
+    // window.addEventListener('load', function() {
+    //     var cards = document.querySelectorAll('.media-background .card');
+    //     var maxCardHeight = 0;
+     
+    //     // Find the maximum height among all the cards
+    //     cards.forEach(function(card) {
+    //        var cardHeight = card.offsetHeight;
+    //        if (cardHeight > maxCardHeight) {
+    //           maxCardHeight = cardHeight;
+    //        }
+    //     });
+     
+    //     // Set the maximum height for all cards
+    //     cards.forEach(function(card) {
+    //        card.style.minHeight = maxCardHeight + 'px';
+    //     });
+    //  });  
     window.addEventListener('load', function() {
         var cards = document.querySelectorAll('.media-background .card');
         var maxCardHeight = 0;
-     
+    
+        // Add the loading animation
+        var loadingElement = document.createElement('div');
+        loadingElement.className = 'loading-animation';
+        document.body.appendChild(loadingElement);
+    
         // Find the maximum height among all the cards
         cards.forEach(function(card) {
-           var cardHeight = card.offsetHeight;
-           if (cardHeight > maxCardHeight) {
-              maxCardHeight = cardHeight;
-           }
+            var cardHeight = card.offsetHeight;
+            if (cardHeight > maxCardHeight) {
+                maxCardHeight = cardHeight;
+            }
         });
-     
+    
         // Set the maximum height for all cards
         cards.forEach(function(card) {
-           card.style.minHeight = maxCardHeight + 'px';
+            card.style.minHeight = maxCardHeight + 'px';
         });
-     });  
+    
+        // Remove the loading animation with fade-out effect
+        loadingElement.classList.add('fade-out');
+        setTimeout(function() {
+            loadingElement.remove();
+        }, 500); // Adjust the duration to match the CSS transition
+    
+    });
+    
     //  End Media cards in home page sizing fix   
      
     
