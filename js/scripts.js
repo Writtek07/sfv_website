@@ -107,6 +107,7 @@
         pagination: true,
         navigation: true,
         loop: true,
+        // items: 3,
         navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
         stopOnHover: true,
         touchDrag: true
@@ -334,7 +335,7 @@
     /* -------------------
     Active menu item on page scroll
     ---------------------*/
-    var sections = $('section')
+    var sections = $('section') && $('footer')
     , nav = $('nav')
     , nav_height = nav.outerHeight();
     $(window).on('scroll', function () {
