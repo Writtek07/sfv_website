@@ -1628,6 +1628,13 @@ nav {
       margin-left: 2em;
     }
 }
+@media (max-width: 767px) {
+    .mobile-vers iframe {    
+      width: 100%;  
+      height: 100%;
+      margin-left: 0.25em;
+    }
+}
 
 @media (min-width: 768px) {
     .abt-us-strip {
@@ -2977,16 +2984,25 @@ border-bottom:1px dotted #ccc;
         max-height: 160px;
     }
 }
+
 footer h4 {
     /* font-size: 16px; */
     color: #DDD;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-/* footer p {
-    font-size: 13px;
-    color: #a0a0a0;
-} */
+
+.footer-sty p {
+    /* font-size: 13px; */
+    /* color: #a0a0a0; */    
+    color: #ddddddef;
+    margin-top: 2em;
+}
+
+.footer-cont-sty p {
+    color: #ddddddef;
+}
+
 .tweet ul {
     list-style: none;
     padding-left: 0;
@@ -3012,7 +3028,7 @@ footer .contact-details {
 .footer-copyright {
     padding-top: 22px;
     padding-bottom: 20px;
-    background: #3B036E;
+    background:  #5F0C6F;
 }
 .footer-copyright p {
     margin: 0;
@@ -4441,11 +4457,16 @@ pre {
 }
 
 #footer .footer-sty {
-    padding: 0 60px;
+    padding: 0 80px 0 90px;
+    margin-bottom: 1em;
 }
 
 #footer .footer-cont-sty {
     padding: 0 40px;
+}
+
+.footer-cont-sty p {
+    
 }
 /* .wniq-features img {
     right: 100px;
