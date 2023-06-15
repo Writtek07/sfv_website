@@ -107,7 +107,7 @@
         pagination: true,
         navigation: true,
         loop: true,
-        // items: 3,
+        items: 3,
         navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
         stopOnHover: true,
         touchDrag: true
@@ -153,7 +153,7 @@
         loop: true,
         navigationText : ['<i class="icon ion-chevron-left "></i>','<i class="icon ion-chevron-right"></i>'],
         stopOnHover: true,
-        touchDrag: false
+        touchDrag: true
       });
 
     
@@ -167,7 +167,7 @@
         loop: true,
         navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
         stopOnHover: true,
-        touchDrag: false
+        touchDrag: true
       });
 
       $("#wniq-banner-footer").owlCarousel({
@@ -222,7 +222,7 @@
         /* -------------------
         Animation.css calling
         ---------------------*/
-        new WOW().init(); 
+        // new WOW().init(); 
     }
     /* -------------------
     Google map
@@ -335,7 +335,7 @@
     /* -------------------
     Active menu item on page scroll
     ---------------------*/
-    var sections = $('section') && $('footer')
+    var sections = $('section')
     , nav = $('nav')
     , nav_height = nav.outerHeight();
     $(window).on('scroll', function () {
@@ -627,25 +627,71 @@ Portfolio
     });
 
     // Media cards in home page sizing fix
-    window.addEventListener('load', function() {
+    // window.addEventListener('load', function() {
+    //     var cards = document.querySelectorAll('.media-background .card');
+    //     var maxCardHeight = 0;
+     
+    //     // Find the maximum height among all the cards
+    //     cards.forEach(function(card) {
+    //        var cardHeight = card.offsetHeight;
+    //        if (cardHeight > maxCardHeight) {
+    //           maxCardHeight = cardHeight;
+    //        }
+    //     });
+     
+    //     // Set the maximum height for all cards
+    //     cards.forEach(function(card) {
+    //        card.style.minHeight = maxCardHeight + 'px';
+    //     });
+        
+    //  });
+
+    window.addEventListener('DOMContentLoaded', function() {
+        var targetSection = document.getElementById('media');
+        var cardsLoaded = false;
+      
+        window.addEventListener('scroll', function() {
+          if (!cardsLoaded && isElementInViewport(targetSection)) {
+            loadCards();
+            cardsLoaded = true;
+          }
+        });
+      });
+      
+      function isElementInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+      
+      function loadCards() {
         var cards = document.querySelectorAll('.media-background .card');
         var maxCardHeight = 0;
-     
+      
         // Find the maximum height among all the cards
         cards.forEach(function(card) {
-           var cardHeight = card.offsetHeight;
-           if (cardHeight > maxCardHeight) {
-              maxCardHeight = cardHeight;
-           }
+          var cardHeight = card.offsetHeight;
+          if (cardHeight > maxCardHeight) {
+            maxCardHeight = cardHeight;
+          }
         });
-     
+      
         // Set the maximum height for all cards
         cards.forEach(function(card) {
-           card.style.minHeight = maxCardHeight + 'px';
+          card.style.minHeight = maxCardHeight + 'px';
         });
-     });
+      }      
+     
     
     //  End Media cards in home page sizing fix   
+
+    // Load wow effect always
+    
+    
      
     
 })(jQuery, window, document);
